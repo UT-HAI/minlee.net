@@ -134,6 +134,8 @@ export default function Bio() {
           .
         </p>
       </div>
+
+      <BioLinks alt />
     </div>
   );
 }

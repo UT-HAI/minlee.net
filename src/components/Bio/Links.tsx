@@ -1,6 +1,7 @@
-export default function BioLinks() {
+export default function BioLinks({ alt = false }: { alt?: boolean }) {
   return (
-    <div id="bio-links">
+    <div id="bio-links" className={alt ? "alt" : ""}>
+      {alt && <hr />}
       <p className="bio-link">
         <img
           src="icons/bio.png"
