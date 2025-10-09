@@ -61,7 +61,7 @@
 }
 
 /* testing new styling/redesign */
-#project-alt {
+.project-alt {
   background: var(--home-gray);
   /* box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1); */
   padding: 1rem;
@@ -102,10 +102,23 @@
   p {
     margin: 0;
   }
+}
 
-  /* flipping every other element ? check with meah */
-  &:nth-child(odd) {
-    /* flex-direction: row-reverse; */
-    /* text-align: right; */
+@media screen and (max-width: 650px) {
+  .project-alt {
+    > .project-large-alt {
+      flex-direction: column;
+      align-items: flex-start;
+      > img {
+        margin: 0;
+      }
+    }
+  }
+
+  .past-project-alt {
+    flex-direction: column;
+    img {
+      width: 100%;
+    }
   }
 }

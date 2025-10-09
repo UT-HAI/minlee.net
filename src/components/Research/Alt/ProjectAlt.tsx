@@ -3,7 +3,7 @@ import SubProjectAlt from "./SubProjectAlt";
 
 export default function ProjectAlt({ project }: { project: Project }) {
   return (
-    <div id="project-alt">
+    <div className="project-alt">
       <div className="project-large-alt">
         <img src={project.image} />
         <div>
