@@ -1,0 +1,54 @@
+#portrait {
+  /* float: left; */
+  margin: 0;
+  width: 280px;
+  margin: 0 1rem 0.5rem 0;
+}
+
+@media screen and (max-width: 700px) {
+  #portrait {
+    width: 225px;
+  }
+}
+
+#bio {
+  display: flex;
+  gap: 1rem;
+}
+
+#bio-links:not(.alt) {
+  display: block;
+}
+
+#bio-links.alt {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  #portrait {
+    margin: 0 auto;
+    display: block;
+  }
+
+  #bio {
+    flex-direction: column;
+  }
+
+  #bio-links:not(.alt) {
+    display: none;
+  }
+
+  #bio-links.alt {
+    display: block;
+  }
+}
+
+.bio-text > p {
+  margin-top: 0;
+}
+
+#bio-links {
+  p {
+    margin: 0;
+  }
+}

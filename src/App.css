@@ -1,0 +1,40 @@
+:root {
+  --lab-blue: #262556;
+  --text-teal: rgb(36, 195, 167);
+  --faded-teal: rgb(157, 221, 210);
+  --soft-blue: #6089c2;
+  --text-purple: #646cff;
+  --navy-blue: #213547;
+  --home-gray: rgb(238, 247, 251);
+}
+
+/* fonts - Karla, Barlow, Lato */
+#root {
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+}
+
+#content {
+  margin: 0 auto;
+}
+
+#name {
+  /* font-family: "Lato", sans-serif; */
+  font-weight: 700;
+}
+
+.section-header {
+  font-size: 2rem;
+  margin: 3rem 0 1rem;
+}
+
+.large-link {
+  margin: 2rem 0 4rem;
+  display: block;
+  width: fit-content;
+  border: 2px solid var(--text-purple);
+  background: var(--text-purple);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  color: white;
+}
