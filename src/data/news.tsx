@@ -6,6 +6,8 @@ export type NewsItem = {
 };
 
 export const newsItems: NewsItem[] = [
+  //  NOTE: the main site's news items have been updated since this was worked on.
+  // Before deploying this version, ensure news items (and other contents) are up to date
   {
     date: "November 2024",
     content: (
